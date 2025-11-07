@@ -32,3 +32,5 @@ dmrRegions <- regionCounts(meth, win.size=cfg$dmr_min_len, step.size=cfg$dmr_min
 # Save session info
 writeLines(capture.output(sessionInfo()), file.path(outdir,"sessionInfo_methylKit.txt"))
 cat("methylKit analysis done. Results in", outdir, "\n")
+
+## Note: regionCounts usage may need parameter tuning; alternatively use dmrByCluster or DMRcaller. For publication-grade DMRs, consider DSS::callDMR which models dispersion.
