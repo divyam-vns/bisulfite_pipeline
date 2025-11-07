@@ -1,0 +1,29 @@
+name: bsseq_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - trim-galore
+  - cutadapt
+  - fastqc
+  - bismark
+  - bowtie2
+  - samtools
+  - bedtools
+  - multiqc
+  - r-base=4.2
+  - r-essentials
+  - r-tidyverse
+  - r-methylkit
+  - r-dss
+  - r-rtracklayer
+  - r-pheatmap
+  - r-ggplot2
+  - r-knitr
+  - pip
+  - pip:
+    - pybedtools
+
+## If any R packages are missing on conda, install them from Bioconductor within R.
