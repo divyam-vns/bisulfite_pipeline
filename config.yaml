@@ -1,0 +1,17 @@
+project_dir: /path/to/bisulfite_project
+fastq_dir: /path/to/fastq
+output_dir: /path/to/bisulfite_project/output
+samples_table: samples.tsv
+bismark_genome_dir: /path/to/bismark_genome
+threads: 8
+# Trim Galore options
+is_rrbs: false         # true for RRBS
+trim_extra_args: ""    # e.g., "--rrbs" or "--clip_R1 10" etc.
+# Bismark options
+bowtie2_mode: "bt2"    # default
+# Methylation extraction options
+extract_contexts: "CpG" # "CpG,CHG,CHH" or "CpG"
+min_coverage: 10
+qvalue_threshold: 0.01
+dmr_min_cpgs: 3
+dmr_min_len: 50
